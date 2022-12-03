@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link src = 'clock.js'>
-    <link href="style.css" rel = 'stylesheet'
-</head>
+    <title>Tick-tack</title>
+    <script src="clock.js"></script>
+    <link href="style.css" rel='stylesheet' </head>
 <body>
-    
-    <div id = "clock" class="clock">
-
-
+    <div id="clock" class="clock">
+        <em>Tick-tack</em>
+        <p id='hour' class='hour'>hour</p>
+        <p></p>
+        <p id='mins' class='mins'>mins</p>
+        <p></p>
+        <p id='sec' class="sec">sec</p>
     </div>
-
-
-
-
+    <script>
+        var pageClock = new Clock({
+            elem: document.getElementById('clock')
+        });
+    </script>
+    <input type='button' onclick="pageClock.start()" value="Start">
+    <input type='button' onclick="pageClock.stop()" value="Stop">
 </body>
 </html>

@@ -2,8 +2,36 @@
 
 .clock{
 
-    color: aqua;
-    size: 6px;
+    color: rgb(61, 81, 81);
+    background-color: aliceblue;
+    border: 5px solid darkblue;
+    height: 130px;
+    width: 100px;
+}
 
+
+.hour{
+    color: green;
+}
+
+.mins{
+    color: blueviolet;
+    
+}
+
+.sec{
+    color: rgb(212, 212, 168);
+    
+}
+
+
+.spclock{
+    text-align: right;
+    color: rgb(239, 36, 168);
+}
+
+.push{
+    text-align: center;
+    color: rgb(151, 252, 0);
 
 }
